@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
-import Home from './coponents/Home/Home';
-import Quizs from './coponents/Quizs/Quizs';
+import Home from './components/Home/Home';
+import Quizs from './components/Quizs/Quizs';
 
 function App() {
 

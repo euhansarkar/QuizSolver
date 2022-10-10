@@ -9,7 +9,7 @@ const Topic = ({topic}) => {
         navigate(`/quizs/${id}`)
     }
     return (
-        <div className='border m-4 border-yellow-500 flex items-center w-full justify-evenly rounded-md'>
+        <div className='border ml-40 flex items-center w-4/5 m-auto justify-evenly rounded-md flex-col md:flex-row'>
             <img className='w-40' src={logo} alt="" />
             <div className="info space-y-3">
                 <h2 className='text-4xl shadow-md'>{name}</h2>
