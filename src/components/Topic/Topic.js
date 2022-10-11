@@ -13,7 +13,7 @@ const Topic = ({topic}) => {
             <img className='w-40' src={logo} alt="" />
             <div className="info space-y-3">
                 <h2 className='text-4xl shadow-md'>{name}</h2>
-                <h3>total: {total}</h3>
+                <h3>total quiz: {total}</h3>
                 <button onClick={handleNavigate} className='bg-black text-white py-1 rounded-lg px-5'>Start Quiz</button>
             </div>
         </div>

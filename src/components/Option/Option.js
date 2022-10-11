@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Option = ({ option, id, ind }) => {
   return (
     <div className=" py-3 px-4 border border-blue-600 gap-3 m-4 rounded-xl">
