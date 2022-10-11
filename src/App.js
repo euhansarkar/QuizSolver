@@ -6,6 +6,7 @@ import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import Quizs from './components/Quizs/Quizs';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
 
@@ -38,6 +39,10 @@ function App() {
           element: <Blog></Blog>
         }
       ]
+    },
+    {
+      path: `*`,
+      element: <NotFound></NotFound>
     }
   ]);
 
