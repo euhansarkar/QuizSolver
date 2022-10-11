@@ -12,8 +12,8 @@ const Quiz = ({ quiz, ind }) => {
   }
 
   return (
-    <div className=" shadow-2xl relative w-4/5 m-auto px-40 my-12">
-      <div onClick={() => setEye(!eye)} className="absolute right-24 top-3">
+    <div className=" shadow-2xl relative md:w-4/5 m-auto px-20 md:px-40 my-12">
+      <div onClick={() => setEye(!eye)} className="absolute md:right-24 right-12 top-8 md:top-3">
         {eye ? (
           <FontAwesomeIcon icon={faEyeSlash}/>
         ) : (

@@ -4,7 +4,6 @@ import Quiz from "../Quiz/Quiz";
 
 const Quizs = () => {
   const quizs = useLoaderData();
-  console.log(quizs);
   return (
     <div className="shadow-2xl rounded-lg">
         <h2 className="text-5xl mt-6 capitalize">Quiz Of {quizs.data.name}</h2>
