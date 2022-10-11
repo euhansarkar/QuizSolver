@@ -6,6 +6,11 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 const Quiz = ({ quiz, ind }) => {
   const [eye, setEye] = useState(false);
   const { id, options, question, correctAnswer } = quiz;
+
+  const handleCorrect = opt => {
+    return opt === correctAnswer ? alert(`this is correct ans`) : alert(`this is false ans`);
+  }
+
   return (
     <div className=" shadow-2xl relative w-4/5 m-auto px-40 my-12">
       <div onClick={() => setEye(!eye)} className="absolute right-24 top-3">
@@ -21,7 +26,7 @@ const Quiz = ({ quiz, ind }) => {
       </h2>
       <div className="grid md:grid-cols-2 pb-5">
         {options.map((option, ind) => (
-          <Option key={ind} id={id} ind={ind} option={option}></Option>
+          <Option key={ind} id={id} ind={ind} option={option} handleCorrect={handleCorrect}></Option>
         ))}
       </div>
       <div className="pb-10 text-blue-600">
