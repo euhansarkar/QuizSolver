@@ -14,15 +14,17 @@ import {
 
 const Statistics = () => {
   const { data } = useLoaderData();
-  console.log(data)
-    
+  console.log(data);
+
   return (
-    <div>
-      <ResponsiveContainer width="500" height="200">
-        <BarChart width={150} height={40} data={data}>
+    <div className="mt-[50px]">
+      <ResponsiveContainer width="100%" height={500}>
+        <BarChart width={800} height={500} data={data}>
           <Bar dataKey="total" fill="#8884d8" />
           <XAxis></XAxis>
           <YAxis></YAxis>
+          <Tooltip></Tooltip>
+          <Legend></Legend>
         </BarChart>
       </ResponsiveContainer>
     </div>
